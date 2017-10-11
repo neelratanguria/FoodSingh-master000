@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bg_login"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    tools:context="com.fsingh.pranshooverma.foodsingh.verifying_otp">
+
+    <FrameLayout
+
+        android:background="#673AB7"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <ImageView
+            android:src="@drawable/background"
+            android:alpha="0.7"
+            android:scaleType="centerCrop"
+            android:id="@+id/main_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+
+            android:alpha="0.9"
+            android:layout_width="90dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_sentiment_satisfied_black_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="140dp"
+            android:id="@+id/welcome"
+            android:alpha="0.85"
+            android:textStyle="normal"
+            android:fontFamily="serif"
+            android:textColor="#ffffff"
+            android:text="Awesome, Thanks"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:id="@+id/textCode"
+            android:layout_height="wrap_content"
+            android:text="Enter Code"
+            android:alpha="0.85"
+            android:textColor="#ffffff"/>
+
+        <EditText
+
+            android:id="@+id/otp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@null"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:padding="10dp"
+            android:maxLength="4"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:background="#ffffff"
+        android:layout_height="1dp"></LinearLayout>
+
+
+    <TextView
+        android:id="@+id/Confirmation"
+        android:layout_marginTop="390dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#ffffff"
+        android:alpha="0.8"
+        android:layout_height="wrap_content"
+        android:text="We have sent the confirmation code to your mobile"/>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:layout_width="match_parent"
+
+        android:alpha="0.5"
+        android:background="#ffffff"
+        android:layout_height="1dp"></LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:alpha="0.5"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="1dp"></LinearLayout>
+    <Button
+        android:alpha="1"
+        android:layout_marginTop="540dp"
+        android:id="@+id/verify"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/buttonbackground"
+        android:text="@string/verify_otp"
+        android:textColor="#ffffff" />
+    </FrameLayout>

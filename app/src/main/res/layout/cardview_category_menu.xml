@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CardView="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="3dp"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        CardView:cardElevation="10dp"
+        android:id="@+id/cardView"
+
+        android:elevation="5dp"
+        card_view:cardCornerRadius="8dp"
+        >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <TextView
+
+                android:id="@+id/dish_name"
+                android:layout_width="140dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_height="40dp"
+                android:gravity="left"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="45dp"
+                android:textSize="12dp"
+                android:fontFamily="casual"
+                android:text="Egg Chicken Fried Rice"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                android:textSize="13dp"
+                android:text="Rs.190"
+                android:id="@+id/dish_price"
+                android:textColor="#2ECC71"
+                android:textStyle="bold"
+                android:background="@drawable/shaperating"
+                android:padding="5dp"
+                />
+
+
+            <!--   Recycler View Item Row   -->
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:id="@+id/minus"
+                    android:layout_marginTop="41dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/ic_remove_circle_outline_black_24dp"
+
+
+                  />
+
+            <TextView
+                android:textSize="13dp"
+                android:text="0"
+                android:id="@+id/item_quantity"
+                android:textColor="#96184FFF"
+
+
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="43dp"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                />
+
+
+            <ImageButton
+                    android:layout_marginTop="41dp"
+                    android:layout_width="30dp"
+                    android:id="@+id/plus"
+
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_add_circle_outline_black_24dp"
+
+
+                 />
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

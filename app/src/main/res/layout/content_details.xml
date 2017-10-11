@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bg_login"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    tools:context="com.fsingh.pranshooverma.foodsingh.Signup_OTP">
+
+    <FrameLayout
+
+        android:background="#673AB7"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <ImageView
+            android:src="@drawable/background"
+            android:alpha="0.8"
+            android:scaleType="centerCrop"
+            android:id="@+id/main_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="65dp"
+            android:alpha="0.9"
+            android:layout_width="60dp"
+            android:layout_marginLeft="2dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_mode_edit_black_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="140dp"
+            android:id="@+id/welcome"
+            android:textStyle="normal"
+            android:fontFamily="serif"
+            android:textColor="#ffffff"
+            android:text="Edit Details"/>
+    </FrameLayout>
+
+    <LinearLayout
+
+
+        android:layout_marginTop="88dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:alpha="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+
+
+        <EditText
+            android:layout_marginLeft="70dp"
+            android:id="@+id/text_name"
+            android:layout_width="230dp"
+            android:layout_height="38dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittextbackground"
+            android:hint="Enter Your Name"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:inputType="text"
+            android:maxLength="50"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="#ffffff"
+            android:textColorHint="#fff3f6"
+            android:textStyle="normal" />
+
+
+
+        <EditText
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="70dp"
+            android:id="@+id/text_email"
+            android:layout_width="230dp"
+            android:layout_height="38dp"
+            android:background="@drawable/edittextbackground"
+            android:hint="Enter Your Email"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="#ffffff"
+            android:textColorHint="#fff3f6"
+            android:textStyle="normal" />
+
+        <EditText
+            android:layout_marginLeft="70dp"
+            android:id="@+id/text_cur_pass"
+            android:layout_width="230dp"
+            android:layout_height="38dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittextbackground"
+            android:hint="Previous Password:"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="#ffffff"
+            android:textColorHint="#fff3f6"
+            android:textStyle="normal" />
+
+        <EditText
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="70dp"
+            android:id="@+id/text_new_pass"
+            android:layout_width="230dp"
+            android:layout_height="38dp"
+
+            android:background="@drawable/edittextbackground"
+            android:hint="New Password"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:inputType="textPassword"
+
+
+            android:maxLength="12"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="#ffffff"
+            android:textColorHint="#fff3f6"
+            android:textStyle="normal" />
+
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/button_save_change"
+            android:gravity="center"
+            android:layout_marginLeft="90dp"
+
+            android:textSize="10dp"
+
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/shapeitem3"
+            android:text="Save Changes"
+            android:textStyle="normal"
+            android:textColor="@color/white" />
+
+        <!-- Link to Login Screen -->
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="#ffffff"
+        android:alpha="0.5"
+        android:layout_marginTop="510dp">
+    </LinearLayout>
+</FrameLayout>

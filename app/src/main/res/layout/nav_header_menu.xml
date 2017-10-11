@@ -1,0 +1,50 @@
+<FrameLayout
+    android:layout_marginTop="0dp"
+    android:alpha="0.8"
+    android:background="#80000000"
+    android:layout_height="200dp"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <ImageView
+
+        android:src="@drawable/background"
+
+        android:scaleType="centerCrop"
+        android:id="@+id/main_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"
+        android:alpha="0.9"
+        android:layout_width="80dp"
+        android:layout_marginLeft="2dp"
+        android:layout_height="80dp"
+        android:background="@drawable/logo7"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="140dp"
+        android:id="@+id/welcome"
+        android:textStyle="normal"
+        android:fontFamily="serif"
+        android:textColor="#ffffff"
+        android:text="Welcome To FoodSingh"/>
+</FrameLayout>
