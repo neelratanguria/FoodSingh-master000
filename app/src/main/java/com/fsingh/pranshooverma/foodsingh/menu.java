@@ -199,12 +199,12 @@ public class menu extends AppCompatActivity implements NavigationView.OnNavigati
         AlertDialog.Builder dialog = new AlertDialog.Builder(menu.this);
         dialog.setTitle("Announcement");
         dialog.setCancelable(false);
-        dialog.setMessage("You are using an older version of this app. To continue using this app, Please update");
+        dialog.setMessage("You are using an older version of this app. To continue using this app, Please Install new version");
         dialog.setPositiveButton("Update", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 //rec = true;
-                String url = "https://play.google.com/store/apps/details?id=com.fsingh.pranshooverma.foodsingh";
+                String url = "https://foodsingh.com/playstore.php";
                 Intent i11 = new Intent(Intent.ACTION_VIEW);
                 i11.setData(Uri.parse(url));
                 startActivity(i11);
